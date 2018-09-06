@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package ejercicio4;
 
 import java.util.Scanner;
@@ -10,7 +6,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author ricky
+ * @author Danny
  */
 public class Ejercicio4 {
     static int ingreso;
@@ -36,7 +32,7 @@ public class Ejercicio4 {
             cola.agregarCola(numPila);
         }
         System.out.println("PILA: ");
-        for(int a=0; a<ingreso; a++){ //LOS DOS FOR DE POR GUSTO, SE PUDO HABER DEJADO EN UNO MISMO
+        for(int a=0; a<ingreso; a++){ //DOS FOR POR COMODIDAD SE PUEDE HACER CON UNO NO MAS.
             float quitarPila = pila.quitarPila(); //Se separó las pilas de la cola para que en la consola se pudieran imprimir en orden
             imprimir(""+quitarPila);
             pilaTotal = pilaTotal + " | " +quitarPila;
@@ -48,7 +44,7 @@ public class Ejercicio4 {
             colaTotal = colaTotal + " | " + quitarCola;
         }
 
-        JOptionPane.showMessageDialog(null, "                       <---- Primero en salir\n"+"PILA ingresada: " + pilaTotal+"\n"+
+        JOptionPane.showMessageDialog(null,"PILA ingresada: " + pilaTotal+"\n"+
                 "COLA: " + colaTotal);
     }
 

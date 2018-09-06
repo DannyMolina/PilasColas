@@ -7,7 +7,7 @@ package ejercicio4;
 
 /**
  *
- * @author ricky
+ * @author Danny
  */
 public class Pila {
     float numero;
